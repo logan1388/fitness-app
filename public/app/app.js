@@ -1,15 +1,5 @@
-angular.module('app', []);
+angular.module('app', ['ngResource']);
 
-angular.module('app').controller('mainCtrl', function($scope) {
-    $scope.bodyParts = [{
-        title: 'Chest',
-        description: 'Chest'
-    }, {
-        title: 'Biceps',
-        description: 'Biceps'
-    }, {
-        title: 'Triceps',
-        description: 'Triceps'
-    }]
-
+angular.module('app').controller('mainCtrl', function($scope, $resource) {
+    $scope.bodyParts  = $resource('/api/bodyparts').query();
 });
