@@ -9,12 +9,14 @@
   "author": "Manu Nair, Shiv Raj Suresh",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.4.1",
     "express": "^4.14.0",
     "jade": "^1.11.0",
     "mongoose": "^4.5.8",
     "pug": "^2.0.0-beta4"
   },
   "devDependencies": {
-    "bower": "^1.7.9"
+    "bower": "^1.7.9",
+    "chai": "^3.5.0"
   }
 }
